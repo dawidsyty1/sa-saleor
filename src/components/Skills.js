@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../static/css/style.css'
 import '../static/css/flaticon.css'
-
+import Skill from '../components/Skill'
 
 class Skills extends Component {
   render() {
@@ -15,72 +15,12 @@ class Skills extends Component {
 				</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap  ">
-							<h3>Software development</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-							  	aria-valuemin="0" aria-valuemax="100" >
-							    <span>75%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap  ">
-							<h3>Soft skills</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-							  	aria-valuemin="0" aria-valuemax="100" >
-							    <span>60%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap  ">
-							<h3>C/C++</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-							  	aria-valuemin="0" aria-valuemax="100" >
-							    <span>85%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap  ">
-							<h3>Software development</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" >
-							    <span>90%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap  ">
-							<h3>Architecture</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" >
-							    <span>70%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap  ">
-							<h3>Clean code</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="10"
-							  	aria-valuemin="0" aria-valuemax="100">
-							    {/* <span>80%</span> */}
-							  	</div>
-							</div>
-						</div>
-					</div>
+				<Skill description="Software development" progressValue={70}/>
+				<Skill description="Architecture" progressValue={70}/>
+				<Skill description="Python" progressValue={70}/>
+				<Skill description="React" progressValue={30}/>
+				<Skill description="Cloud AWS/GCP" progressValue={30}/>
+				<Skill description="Docker" progressValue={60}/>
 				</div>
 				<div class="row justify-content-center py-5 mt-5">
           <div class="col-md-12 heading-section text-center  ">

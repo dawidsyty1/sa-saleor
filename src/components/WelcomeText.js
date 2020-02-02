@@ -8,7 +8,7 @@ class WelcomeText extends Component {
 		 	<div class="text">
 		 		<span class="subheading">Hello</span>
 		 		<h1 class="mb-4 mt-3">I'm <span>Dawid Syty</span></h1>
-		 		<h2 class="mb-4">A Freelance Software Developer</h2>
+		 		<h2 class="mb-4">A Software Developer</h2>
 		 		<p><a href="#contact-section" class="btn-custom">Hire me</a></p>
 		 	</div>
 		 </div>

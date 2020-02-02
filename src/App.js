@@ -11,9 +11,7 @@ import Footer from './components/Footer'
 
 
 class App extends Component {
-  listenScrollEvent() {
-		console.log('Scroll event detected!');
-	}
+
   render() {
     return (
       <div>

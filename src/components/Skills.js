@@ -50,7 +50,7 @@ class Skills extends Component {
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap  ">
-							<h3>Python</h3>
+							<h3>Software development</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
 							  	aria-valuemin="0" aria-valuemax="100" >
@@ -72,11 +72,11 @@ class Skills extends Component {
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap  ">
-							<h3>Software</h3>
+							<h3>Clean code</h3>
 							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="10"
 							  	aria-valuemin="0" aria-valuemax="100">
-							    <span>80%</span>
+							    {/* <span>80%</span> */}
 							  	</div>
 							</div>
 						</div>

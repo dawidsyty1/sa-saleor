@@ -9,21 +9,27 @@ class Navbar extends Component {
         additionalClassStyle: this.defaultStyle,
         stylePosition:"none"
     };
+    updateNavbar() {
+        console.log("Test")
+        const isTop = window.scrollY < 200;
+        console.log(window.scrollY);
+        if (isTop !== this.state.isTop) {                
+            this.setState({ additionalClassStyle: this.defaultStyle });
+            this.setState({ stylePosition:"fixed"});
+        }else{                
+            var newState = this.defaultStyle + " awake scrolled "
+            this.setState({ stylePosition:"none"});
+            this.setState({ additionalClassStyle: newState });
+        }
+    };
 
     componentDidMount() {
+        this.updateNavbar();
         document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 200;
-            console.log(window.scrollY);
-            if (isTop !== this.state.isTop) {                
-                this.setState({ additionalClassStyle: this.defaultStyle });
-                this.setState({ stylePosition:"fixed"});
-            }else{                
-                var newState = this.defaultStyle + " awake scrolled "
-                this.setState({ stylePosition:"none"});
-                this.setState({ additionalClassStyle: newState });
-            }
+            this.updateNavbar();
         });
     }
+
     render() {
     return (
         <nav class={this.state.additionalClassStyle}
@@ -31,7 +37,7 @@ class Navbar extends Component {
             id="ftco-navbar">      
 
         <div class="container">
-            <a class="navbar-brand" href="index.html">Software Nest</a>
+            <a class="navbar-brand" href="index.html">D.S.</a>
             <button class="navbar-toggler js-fh5co-nav-toggle " type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
             </button>
@@ -41,7 +47,7 @@ class Navbar extends Component {
                 <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
                 <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
                 <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-                <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+                {/* <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> */}
                 <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
             </ul>
             </div>

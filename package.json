@@ -10,7 +10,9 @@
     "react-dom": "^16.12.0",
     "react-scripts": "^1.1.4",
     "react-scrolling-nav": "^1.1.5",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "react-i18next": "^11.3.3",
+    "i18next": "^19.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

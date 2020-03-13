@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import myImage from '../static/images/bg_1.jpg'
 import '../static/css/style.css'
-import WelcomeText from '../components/WelcomeText'
+import WelcomeText from './WelcomeText'
 
 class HomeSlider extends Component {
   render() {

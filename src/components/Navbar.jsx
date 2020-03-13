@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavDropdown from 'react-bootstrap/NavDropdown'
-
+import { withTranslation } from 'react-i18next';
 
 
 class Navbar extends Component {
@@ -63,6 +63,9 @@ class Navbar extends Component {
 
 
     render() {
+    const { i18n } = this.props;
+    const lang = i18n.language;
+    console.log("lang", lang);
     return (
         <nav class={this.state.additionalClassStyle} style={{position: this.state.stylePosition}}
         id="ftco-navbar">
@@ -92,4 +95,5 @@ class Navbar extends Component {
     );
     }
 }
-export default Navbar;
+
+export default withTranslation('common')(Navbar);

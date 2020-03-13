@@ -1,7 +1,15 @@
 {
-  "welcome": "Witam na mojej stronie",
-  "menu": {
+  "navbar": {
     "home": "Strona główna",
-    "news": "Nowości"
+    "about_me": "O mnie",
+    "skills": "umiejętności",
+    "contact": "Kontakt"
+  },
+  "welcome": {
+    "welcome": "Witaj",
+    "first_line": "Nazywam sie ",
+    "first_line_span": "Dawid Syty,",
+    "second_line": "oraz jestem Software developerem.",
+    "third_line": "Zatrudnij mnie!"
   }
 }

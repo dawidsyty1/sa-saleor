@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import { I18nextProvider } from 'react-i18next';
-import i18next from 'i18next';
-import { config as i18nextConfig } from './translations';
+import React, { Fragment, Component } from 'react';
+
 import './App.css';
 import Navbar from './components/Navbar'
 import HomeSlider from './components/HomeSlider'
@@ -9,23 +7,25 @@ import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { withTranslation } from 'react-i18next';
 
-i18next.init(i18nextConfig);
 
 class App extends Component {
 
   render() {
+    const { props } = this;
+    console.log('test', this.props.t('menu.home') );
     return (
-      <I18nextProvider i18n={i18next}>
+      <Fragment>
         <Navbar/>
-        <HomeSlider/>
+        <HomeSlider trans={props.t}/>
         <AboutMe/>
         <Skills/>
         <Contact/>
         <Footer/>
-      </I18nextProvider>
+      </Fragment>
     );
   }
 }
 
-export default App;
+export default withTranslation('common')(App);

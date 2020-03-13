@@ -1,7 +1,15 @@
 {
-  "welcome": "Welcome on the homepage",
-  "menu": {
+  "navbar": {
     "home": "Home",
-    "news": "News"
+    "about_me": "About me",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "welcome": {
+    "welcome": "HELLO",
+    "first_line": "I'm ",
+    "first_line_span": "Dawid Syty,",
+    "second_line": "A Software Developer.",
+    "third_line": "Hire Me!!"
   }
 }

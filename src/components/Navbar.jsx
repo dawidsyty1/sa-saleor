@@ -74,8 +74,8 @@ class Navbar extends Component {
             <a class="navbar-brand" href="/">D.S.</a>
 
             <NavDropdown class="navbar-toggler" title="Menu" id="basic-nav-dropdown" style={{visibility: this.state.visibilityStatus}}>
-                <NavDropdown.Item href="#home-section">Home</NavDropdown.Item>
-                <NavDropdown.Item href="#about-section">About</NavDropdown.Item>
+                <NavDropdown.Item href="#home-section">{ this.props.t('menu.home') }</NavDropdown.Item>
+                <NavDropdown.Item href="#about-section">About1</NavDropdown.Item>
                 <NavDropdown.Item href="#skills-section">Skills</NavDropdown.Item>
                 <NavDropdown.Item href="#contact-section">Contact</NavDropdown.Item>
             </NavDropdown>
@@ -83,11 +83,10 @@ class Navbar extends Component {
             
             <div class="collapse navbar-collapse" id="ftco-nav" ref={this.myInput}>
             <ul class="navbar-nav nav ml-auto">
-                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-                {/* <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> */}
-                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>{ this.props.t('navbar.home') }</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>{ this.props.t('navbar.about_me') }</span></a></li>
+                <li class="nav-item"><a href="#skills-section" class="nav-link"><span>{ this.props.t('navbar.skills') }</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>{ this.props.t('navbar.contact') }</span></a></li>
             </ul>
             </div>
         </div>

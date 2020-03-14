@@ -60,12 +60,8 @@ class Navbar extends Component {
         });
     }
 
-
-
     render() {
     const { i18n } = this.props;
-    const lang = i18n.language;
-    console.log("lang", lang);
     return (
         <nav class={this.state.additionalClassStyle} style={{position: this.state.stylePosition}}
         id="ftco-navbar">
@@ -74,10 +70,11 @@ class Navbar extends Component {
             <a class="navbar-brand" href="/">D.S.</a>
 
             <NavDropdown class="navbar-toggler" title="Menu" id="basic-nav-dropdown" style={{visibility: this.state.visibilityStatus}}>
-                <NavDropdown.Item href="#home-section">{ this.props.t('menu.home') }</NavDropdown.Item>
-                <NavDropdown.Item href="#about-section">About1</NavDropdown.Item>
-                <NavDropdown.Item href="#skills-section">Skills</NavDropdown.Item>
-                <NavDropdown.Item href="#contact-section">Contact</NavDropdown.Item>
+                <NavDropdown.Item href="#home-section">{ this.props.t('navbar.home') }</NavDropdown.Item>
+                <NavDropdown.Item href="#about-section">{ this.props.t('navbar.about_me') }</NavDropdown.Item>
+                <NavDropdown.Item href="#skills-section">{ this.props.t('navbar.skills') }</NavDropdown.Item>
+                <NavDropdown.Item href="#contact-section">{ this.props.t('navbar.contact') }</NavDropdown.Item>
+                <NavDropdown.Item onClick={this.props.languageChanged}>ENG/PL</NavDropdown.Item>
             </NavDropdown>
 
             
@@ -87,6 +84,7 @@ class Navbar extends Component {
                 <li class="nav-item"><a href="#about-section" class="nav-link"><span>{ this.props.t('navbar.about_me') }</span></a></li>
                 <li class="nav-item"><a href="#skills-section" class="nav-link"><span>{ this.props.t('navbar.skills') }</span></a></li>
                 <li class="nav-item"><a href="#contact-section" class="nav-link"><span>{ this.props.t('navbar.contact') }</span></a></li>
+                <li class="nav-item"><a class="nav-link" onClick={this.props.languageChanged}><span>ENG/PL</span></a></li>
             </ul>
             </div>
         </div>

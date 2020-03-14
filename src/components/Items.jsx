@@ -15,7 +15,7 @@ class Items extends Component {
       <Fragment>
         <Navbar languageChanged={props.languageChanged}/>
         <HomeSlider trans={props.t}/>
-        <AboutMe/>
+        <AboutMe trans={props.t}/>
         <Skills/>
         <Contact/>
         <Footer/>

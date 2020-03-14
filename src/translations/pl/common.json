@@ -3,7 +3,8 @@
     "home": "Strona główna",
     "about_me": "O mnie",
     "skills": "Moje umiejętności",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "lang": "ENG"
   },
   "welcome": {
     "welcome": "Witaj",
@@ -11,5 +12,12 @@
     "first_line_span": "Dawid Syty,",
     "second_line": "oraz jestem Software developerem.",
     "third_line": "Zatrudnij mnie!"
+  },
+  "about_me": {
+    "welcome": "Witaj",
+    "about_me": "Kilka słów o mnie.",
+    "description": "    Pracuję jako programista od 2014 roku. Głównymi technologiami którymi sie posługuję są C/C++, Python oraz Javascript. Znam również frameworki takie jak Django/React. W swojej karierzę poszukuję wyzwań oraz fajnych ludzi.",
+    "service_one_title": "Inżynier oprogramowania",
+    "service_one_description": "Wielokrotnie pracowałem przy aplikacjacj na systemy wbudowane oraz typu Unix."
   }
 }

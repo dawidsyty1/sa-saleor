@@ -3,7 +3,8 @@
     "home": "Home",
     "about_me": "About me",
     "skills": "Skills",
-    "contact": "Contact"
+    "contact": "Contact",
+    "lang": "PL"
   },
   "welcome": {
     "welcome": "HELLO",
@@ -11,5 +12,12 @@
     "first_line_span": "Dawid Syty,",
     "second_line": "A Software Developer.",
     "third_line": "Hire Me!!"
+  },
+  "about_me": {
+    "welcome": "Welcome",
+    "about_me": "About me",
+    "description": "    My name is Dawid Syty. I live in Poland. I’m Software Developer since 2014. I’ve good knowledge of C++, Python(Django/Flash/WebApp2/), Javascript(basics React.js and Vue.js) and looking for opportunities to expand my knowledge and take part in projects that present a challenge.",
+    "service_one_title": "Software engineer",
+    "service_one_description": "I've developed middleware in C/C++, mostly on Unix systems."
   }
 }

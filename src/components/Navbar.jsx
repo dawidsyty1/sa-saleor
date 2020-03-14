@@ -74,7 +74,7 @@ class Navbar extends Component {
                 <NavDropdown.Item href="#about-section">{ this.props.t('navbar.about_me') }</NavDropdown.Item>
                 <NavDropdown.Item href="#skills-section">{ this.props.t('navbar.skills') }</NavDropdown.Item>
                 <NavDropdown.Item href="#contact-section">{ this.props.t('navbar.contact') }</NavDropdown.Item>
-                <NavDropdown.Item onClick={this.props.languageChanged}>ENG/PL</NavDropdown.Item>
+                <NavDropdown.Item href="#home-section" onClick={this.props.languageChanged}>{ this.props.t('navbar.lang') }</NavDropdown.Item>
             </NavDropdown>
 
             
@@ -84,7 +84,7 @@ class Navbar extends Component {
                 <li class="nav-item"><a href="#about-section" class="nav-link"><span>{ this.props.t('navbar.about_me') }</span></a></li>
                 <li class="nav-item"><a href="#skills-section" class="nav-link"><span>{ this.props.t('navbar.skills') }</span></a></li>
                 <li class="nav-item"><a href="#contact-section" class="nav-link"><span>{ this.props.t('navbar.contact') }</span></a></li>
-                <li class="nav-item"><a class="nav-link" onClick={this.props.languageChanged}><span>ENG/PL</span></a></li>
+                <li class="nav-item"><a href="#home-section" class="nav-link" onClick={this.props.languageChanged}><span>{ this.props.t('navbar.lang') }</span></a></li>
             </ul>
             </div>
         </div>

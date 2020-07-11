@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import logo from '../../../static/img/logo.png';
 
 
@@ -15,5 +16,9 @@ const MobileNavbar = ({ setShowMobile }) => {
         </div>
     );
 }
+
+MobileNavbar.propTypes = {
+    setShowMobile: PropTypes.func.isRequired,
+};
 
 export default MobileNavbar;

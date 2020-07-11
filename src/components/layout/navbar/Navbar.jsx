@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import logo from '../../../static/img/logo.png';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 const navigationLinks = [
@@ -46,5 +47,10 @@ const Navbar = ({ setShowMobile }) => {
         </Fragment >
     )
 }
+
+Navbar.propTypes = {
+    setShowMobile: PropTypes.func.isRequired,
+};
+
 
 export default Navbar;

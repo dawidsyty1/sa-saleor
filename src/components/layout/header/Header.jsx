@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <Fragment>
       <MobileNavbar setShowMobile={() => setShowMobile(true)} />
-      <header className={`header-area clearfix ${showMobile ? 'bp-xs-on' : ''}`} >
-        <Navbar setShowMobile={e => setShowMobile(true)} />
+      <header className={`header-area clearfix ${showMobile ? 'bp-xs-on' : ''}`}>
+        <Navbar setShowMobile={() => setShowMobile(true)} />
       </header>
     </Fragment>
   );

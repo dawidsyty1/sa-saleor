@@ -9,14 +9,16 @@ import CategoryProvider from './containers/category/CategoryProvider';
 import Header from './components/layout/header/Header';
 import Footer from './components/layout/footer/Footer';
 import Router from './containers/router/Router';
+import BasePage from './components/page/base/Base';
 
 const App = () => (
   <ApolloProvider client={client}>
     <CategoryProvider>
       <ProductProvider>
-        <Header>
+        <BasePage>
+          <Header />
           <Router />
-        </Header>
+        </BasePage>
         <Footer />
       </ProductProvider>
     </CategoryProvider>

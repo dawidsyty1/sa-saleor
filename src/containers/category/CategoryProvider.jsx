@@ -15,7 +15,7 @@ const CategoryProvider = ({ children }) => {
     })
       .then((result) => {
         console.log('CategoryProvider', result);
-        setProducts(result.data.products.edges);
+        setProducts(result.data.categories.edges);
       })
       .catch(result => console.log('ERROR!!!:', result));
   }, []);

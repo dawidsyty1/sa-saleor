@@ -14,8 +14,9 @@ const App = () => (
   <ApolloProvider client={client}>
     <CategoryProvider>
       <ProductProvider>
-        <Header />
-        <Router />
+        <Header>
+          <Router />
+        </Header>
         <Footer />
       </ProductProvider>
     </CategoryProvider>

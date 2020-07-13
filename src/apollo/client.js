@@ -4,7 +4,7 @@ import { getApolloContext } from '@apollo/react-hooks';
 
 export const client = new ApolloClient({
   uri: 'http://18.130.233.98:8000/graphql/',
-  ssl: false,
+  rejectUnauthorized: false,
 });
 
 export const useApolloContext = () => React.useContext(getApolloContext());

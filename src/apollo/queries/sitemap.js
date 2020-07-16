@@ -11,6 +11,38 @@ export const getProductsQuery = gql`
         node {
           id
           name
+          images {
+            url
+          }
+          pricing {
+            onSale
+            priceRange {
+              start {
+                currency
+                gross {
+                  amount
+                }
+                net {
+                  amount
+                }
+                tax {
+                  amount
+                }
+              }
+              stop {
+                currency
+                gross {
+                  amount
+                }
+                net {
+                  amount
+                }
+                tax {
+                  amount
+                }
+              }
+            }
+          }
         }
       }
     }

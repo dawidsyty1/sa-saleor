@@ -1,1 +1,6 @@
-sudo docker-compose up --build
+# SIMPLE SHOP.
+#SALEOR
+#REACT
+#JAVASCRIPT
+#GRAPHQL
+
